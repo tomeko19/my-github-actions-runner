@@ -1,0 +1,10 @@
+name: Test Runner
+on: [push]
+jobs:
+  test-runner:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Print message
+        run: echo "GitHub Runner is working!"
